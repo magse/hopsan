@@ -142,8 +142,8 @@ void SecondOrderTransferFunction::initializeValues(double u0, double y0)
 
 void SecondOrderTransferFunction::setBackupLength(size_t nStep)
 {
-    mBackupU.initialize(nStep*2, mDelayedU);
-    mBackupY.initialize(nStep*2, mDelayedY);
+    mBackupU.initialize(static_cast<int>(nStep*2), mDelayedU);
+    mBackupY.initialize(static_cast<int>(nStep*2), mDelayedY);
 }
 
 

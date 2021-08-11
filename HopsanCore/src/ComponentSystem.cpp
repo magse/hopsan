@@ -1557,8 +1557,8 @@ bool ComponentSystem::disconnect(Port *pPort1, Port *pPort2)
             addErrorMessage("When attempting disconnect: Port: "+msgName1+" is not connected to: "+msgName2);
             return false;
         }
-        addFatalMessage("When attempting disconnect: One of the ports is NULL");
     }
+	addFatalMessage("When attempting disconnect: At least one of the ports is NULL");
     return false;
 }
 

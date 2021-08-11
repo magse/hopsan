@@ -685,7 +685,6 @@ void Port::disableStartValue(const size_t idx)
 
 
 //! @brief Check if the port is currently connected
-//! @brief Returns True or False
 bool Port::isConnected() const
 {
     return (mConnectedPorts.size() > 0);
@@ -1345,9 +1344,9 @@ Port* ReadMultiPort::addSubPort()
 
 //! @brief A very simple port factory, no need to complicate things with the more advanced one as we will only have a few fixed port types.
 //! @param [in] portType The type of port to create
-//! @param [in] nodeType The type of node that the port should contain
-//! @param [in] name The name of the port
-//! @param [in] pPortOwner A pointer to the owner component
+//! @param [in] rNodeType The type of node that the port should contain
+//! @param [in] rName The name of the port
+//! @param [in] pParentComponent A pointer to the owner component
 //! @param [in] pParentPort A pointer to the parent port in case of creation of a subport to a multiport
 //! @return A pointer to the created port
 Port* hopsan::createPort(const PortTypesEnumT portType, const HString &rNodeType, const HString &rName, Component *pParentComponent, Port *pParentPort)

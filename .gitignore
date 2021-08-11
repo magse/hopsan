@@ -24,3 +24,10 @@ GPATH
 GTAGS
 GRTAGS
 GSYMS
+packaging/macos.*.tgz
+
+packaging/macos/hopsan.xcworkspace/xcuserdata/magse.xcuserdatad/
+
+packaging/macos/hopsancore/hopsancore.xcodeproj/project.xcworkspace/xcuserdata/magse.xcuserdatad/
+
+packaging/macos/hopsancore/hopsancore.xcodeproj/xcuserdata/magse.xcuserdatad/xcschemes/

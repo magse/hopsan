@@ -193,7 +193,7 @@ NumericalIntegrationSolver::NumericalIntegrationSolver(Component *pParentCompone
     mpParentComponent = pParentComponent;
     mTimeStep = mpParentComponent->getTimestep();
     mpStateVars = pStateVars;
-    mnStateVars = pStateVars->size();
+    mnStateVars = static_cast<int>(pStateVars->size());
     mTolerance = tolerance;
     mMaxIter = maxIter;
 }

@@ -37,7 +37,7 @@
 
 using namespace hopsan;
 
-//! @class hopsan::FirstOrderTransferFunction
+////! @class hopsan::FirstOrderTransferFunction
 //! @ingroup ComponentUtilityClasses
 //! @brief The FirstOrderTransferFunction class implements a first order time discrete transfer function using bilinear transform
 //!
@@ -130,8 +130,8 @@ void FirstOrderTransferFunction::initializeValues(double u0, double y0)
 //! @param[in] nSteps The number of steps to remember
 void FirstOrderTransferFunction::setBackupLength(size_t nSteps)
 {
-    mBackupU.initialize(nSteps, mDelayedU);
-    mBackupY.initialize(nSteps, mDelayedY);
+    mBackupU.initialize(static_cast<int>(nSteps), mDelayedU);
+    mBackupY.initialize(static_cast<int>(nSteps), mDelayedY);
 }
 
 

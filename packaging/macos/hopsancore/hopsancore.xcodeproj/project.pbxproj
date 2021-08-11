@@ -1,0 +1,560 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D84CB8426C294E50038B4BD /* ComponentSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D84CB7B26C294E50038B4BD /* ComponentSystem.cpp */; };
+		5D84CB8526C294E50038B4BD /* HString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D84CB7C26C294E50038B4BD /* HString.cpp */; };
+		5D84CB8626C294E50038B4BD /* Parameters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D84CB7D26C294E50038B4BD /* Parameters.cpp */; };
+		5D84CB8726C294E50038B4BD /* Port.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D84CB7E26C294E50038B4BD /* Port.cpp */; };
+		5D84CB8826C294E50038B4BD /* Quantities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D84CB7F26C294E50038B4BD /* Quantities.cpp */; };
+		5D84CB8926C294E50038B4BD /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D84CB8026C294E50038B4BD /* Node.cpp */; };
+		5D84CB8A26C294E50038B4BD /* Nodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D84CB8126C294E50038B4BD /* Nodes.cpp */; };
+		5D84CB8B26C294E50038B4BD /* Component.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D84CB8226C294E50038B4BD /* Component.cpp */; };
+		5D84CB8C26C294E50038B4BD /* HopsanEssentials.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D84CB8326C294E50038B4BD /* HopsanEssentials.cpp */; };
+		5D84CB9F26C2962F0038B4BD /* SecondOrderTransferFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D84CB9026C2962F0038B4BD /* SecondOrderTransferFunction.cpp */; };
+		5D84CBA026C2962F0038B4BD /* TempDirectoryHandle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D84CB9126C2962F0038B4BD /* TempDirectoryHandle.cpp */; };
+		5D84CBA126C2962F0038B4BD /* PLOParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D84CB9226C2962F0038B4BD /* PLOParser.cpp */; };
+		5D84CBA226C2962F0038B4BD /* LookupTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D84CB9326C2962F0038B4BD /* LookupTable.cpp */; };
+		5D84CBA326C2962F0038B4BD /* IntegratorLimited.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D84CB9426C2962F0038B4BD /* IntegratorLimited.cpp */; };
+		5D84CBA426C2962F0038B4BD /* HopsanPowerUser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D84CB9526C2962F0038B4BD /* HopsanPowerUser.cpp */; };
+		5D84CBA526C2962F0038B4BD /* ludcmp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D84CB9626C2962F0038B4BD /* ludcmp.cpp */; };
+		5D84CBA626C2962F0038B4BD /* DoubleIntegratorWithDampingAndCoulumbFriction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D84CB9726C2962F0038B4BD /* DoubleIntegratorWithDampingAndCoulumbFriction.cpp */; };
+		5D84CBA726C2962F0038B4BD /* WhiteGaussianNoise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D84CB9826C2962F0038B4BD /* WhiteGaussianNoise.cpp */; };
+		5D84CBA826C2962F0038B4BD /* EquationSystemSolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D84CB9926C2962F0038B4BD /* EquationSystemSolver.cpp */; };
+		5D84CBA926C2962F0038B4BD /* matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D84CB9A26C2962F0038B4BD /* matrix.cpp */; };
+		5D84CBAA26C2962F0038B4BD /* AuxiliarySimulationFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D84CB9B26C2962F0038B4BD /* AuxiliarySimulationFunctions.cpp */; };
+		5D84CBAB26C2962F0038B4BD /* DoubleIntegratorWithDamping.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D84CB9C26C2962F0038B4BD /* DoubleIntegratorWithDamping.cpp */; };
+		5D84CBAC26C2962F0038B4BD /* CSVParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D84CB9D26C2962F0038B4BD /* CSVParser.cpp */; };
+		5D84CBAD26C2962F0038B4BD /* FirstOrderTransferFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D84CB9E26C2962F0038B4BD /* FirstOrderTransferFunction.cpp */; };
+		5D84CBB926C296490038B4BD /* LoadExternal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D84CBAF26C296490038B4BD /* LoadExternal.cpp */; };
+		5D84CBBA26C296490038B4BD /* AliasHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D84CBB026C296490038B4BD /* AliasHandler.cpp */; };
+		5D84CBBB26C296490038B4BD /* HopsanCoreMessageHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D84CBB126C296490038B4BD /* HopsanCoreMessageHandler.cpp */; };
+		5D84CBBC26C296490038B4BD /* SaveRestoreSimulationPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D84CBB226C296490038B4BD /* SaveRestoreSimulationPoint.cpp */; };
+		5D84CBBD26C296490038B4BD /* StringUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D84CBB326C296490038B4BD /* StringUtilities.cpp */; };
+		5D84CBBE26C296490038B4BD /* NumHopHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D84CBB426C296490038B4BD /* NumHopHelper.cpp */; };
+		5D84CBBF26C296490038B4BD /* SimulationHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D84CBB526C296490038B4BD /* SimulationHandler.cpp */; };
+		5D84CBC026C296490038B4BD /* MultiThreadingUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D84CBB626C296490038B4BD /* MultiThreadingUtilities.cpp */; };
+		5D84CBC126C296490038B4BD /* HmfLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D84CBB726C296490038B4BD /* HmfLoader.cpp */; };
+		5D84CBC226C296490038B4BD /* ConnectionAssistant.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D84CBB826C296490038B4BD /* ConnectionAssistant.cpp */; };
+		5DCB27D726C2E5CD00A2C2E9 /* libsundials_kinsol.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCB27D626C2E5CD00A2C2E9 /* libsundials_kinsol.a */; };
+		5DCB27D926C2E5EE00A2C2E9 /* libsundials_nvecserial.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCB27D826C2E5EE00A2C2E9 /* libsundials_nvecserial.a */; };
+		5DCB27DB26C2E62A00A2C2E9 /* libsundials_sunlinsoldense.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCB27DA26C2E62A00A2C2E9 /* libsundials_sunlinsoldense.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		5DCB27DE26C2F94D00A2C2E9 /* libindexingcsvparser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCB27DD26C2F93700A2C2E9 /* libindexingcsvparser.a */; };
+		5DCB27E126C3C3CE00A2C2E9 /* libnumhop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCB27E026C3C3BD00A2C2E9 /* libnumhop.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5D84CB3926C291BA0038B4BD /* libhopsancore.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libhopsancore.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D84CB7B26C294E50038B4BD /* ComponentSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ComponentSystem.cpp; sourceTree = "<group>"; };
+		5D84CB7C26C294E50038B4BD /* HString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HString.cpp; sourceTree = "<group>"; };
+		5D84CB7D26C294E50038B4BD /* Parameters.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Parameters.cpp; sourceTree = "<group>"; };
+		5D84CB7E26C294E50038B4BD /* Port.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Port.cpp; sourceTree = "<group>"; };
+		5D84CB7F26C294E50038B4BD /* Quantities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Quantities.cpp; sourceTree = "<group>"; };
+		5D84CB8026C294E50038B4BD /* Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Node.cpp; sourceTree = "<group>"; };
+		5D84CB8126C294E50038B4BD /* Nodes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Nodes.cpp; sourceTree = "<group>"; };
+		5D84CB8226C294E50038B4BD /* Component.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Component.cpp; sourceTree = "<group>"; };
+		5D84CB8326C294E50038B4BD /* HopsanEssentials.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HopsanEssentials.cpp; sourceTree = "<group>"; };
+		5D84CB9026C2962F0038B4BD /* SecondOrderTransferFunction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SecondOrderTransferFunction.cpp; sourceTree = "<group>"; };
+		5D84CB9126C2962F0038B4BD /* TempDirectoryHandle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TempDirectoryHandle.cpp; sourceTree = "<group>"; };
+		5D84CB9226C2962F0038B4BD /* PLOParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PLOParser.cpp; sourceTree = "<group>"; };
+		5D84CB9326C2962F0038B4BD /* LookupTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LookupTable.cpp; sourceTree = "<group>"; };
+		5D84CB9426C2962F0038B4BD /* IntegratorLimited.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IntegratorLimited.cpp; sourceTree = "<group>"; };
+		5D84CB9526C2962F0038B4BD /* HopsanPowerUser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HopsanPowerUser.cpp; sourceTree = "<group>"; };
+		5D84CB9626C2962F0038B4BD /* ludcmp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ludcmp.cpp; sourceTree = "<group>"; };
+		5D84CB9726C2962F0038B4BD /* DoubleIntegratorWithDampingAndCoulumbFriction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DoubleIntegratorWithDampingAndCoulumbFriction.cpp; sourceTree = "<group>"; };
+		5D84CB9826C2962F0038B4BD /* WhiteGaussianNoise.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WhiteGaussianNoise.cpp; sourceTree = "<group>"; };
+		5D84CB9926C2962F0038B4BD /* EquationSystemSolver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EquationSystemSolver.cpp; sourceTree = "<group>"; };
+		5D84CB9A26C2962F0038B4BD /* matrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = matrix.cpp; sourceTree = "<group>"; };
+		5D84CB9B26C2962F0038B4BD /* AuxiliarySimulationFunctions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AuxiliarySimulationFunctions.cpp; sourceTree = "<group>"; };
+		5D84CB9C26C2962F0038B4BD /* DoubleIntegratorWithDamping.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DoubleIntegratorWithDamping.cpp; sourceTree = "<group>"; };
+		5D84CB9D26C2962F0038B4BD /* CSVParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CSVParser.cpp; sourceTree = "<group>"; };
+		5D84CB9E26C2962F0038B4BD /* FirstOrderTransferFunction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FirstOrderTransferFunction.cpp; sourceTree = "<group>"; };
+		5D84CBAF26C296490038B4BD /* LoadExternal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoadExternal.cpp; sourceTree = "<group>"; };
+		5D84CBB026C296490038B4BD /* AliasHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AliasHandler.cpp; sourceTree = "<group>"; };
+		5D84CBB126C296490038B4BD /* HopsanCoreMessageHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HopsanCoreMessageHandler.cpp; sourceTree = "<group>"; };
+		5D84CBB226C296490038B4BD /* SaveRestoreSimulationPoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SaveRestoreSimulationPoint.cpp; sourceTree = "<group>"; };
+		5D84CBB326C296490038B4BD /* StringUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringUtilities.cpp; sourceTree = "<group>"; };
+		5D84CBB426C296490038B4BD /* NumHopHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NumHopHelper.cpp; sourceTree = "<group>"; };
+		5D84CBB526C296490038B4BD /* SimulationHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimulationHandler.cpp; sourceTree = "<group>"; };
+		5D84CBB626C296490038B4BD /* MultiThreadingUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MultiThreadingUtilities.cpp; sourceTree = "<group>"; };
+		5D84CBB726C296490038B4BD /* HmfLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HmfLoader.cpp; sourceTree = "<group>"; };
+		5D84CBB826C296490038B4BD /* ConnectionAssistant.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConnectionAssistant.cpp; sourceTree = "<group>"; };
+		5DCB27D626C2E5CD00A2C2E9 /* libsundials_kinsol.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsundials_kinsol.a; path = ../build/Intermediates/hopsancore.build/Debug/hopsancore.build/DerivedSources/sundials/src/kinsol/libsundials_kinsol.a; sourceTree = "<group>"; };
+		5DCB27D826C2E5EE00A2C2E9 /* libsundials_nvecserial.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsundials_nvecserial.a; path = ../build/Intermediates/hopsancore.build/Debug/hopsancore.build/DerivedSources/sundials/src/nvector/serial/libsundials_nvecserial.a; sourceTree = "<group>"; };
+		5DCB27DA26C2E62A00A2C2E9 /* libsundials_sunlinsoldense.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsundials_sunlinsoldense.a; path = ../build/Intermediates/hopsancore.build/Debug/hopsancore.build/DerivedSources/sundials/src/sunlinsol/dense/libsundials_sunlinsoldense.a; sourceTree = "<group>"; };
+		5DCB27DD26C2F93700A2C2E9 /* libindexingcsvparser.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libindexingcsvparser.a; path = ../build/Intermediates/hopsancore.build/Debug/hopsancore.build/DerivedSources/indexingcsvparser/libindexingcsvparser.a; sourceTree = "<group>"; };
+		5DCB27E026C3C3BD00A2C2E9 /* libnumhop.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libnumhop.a; path = ../build/Intermediates/hopsancore.build/Debug/hopsancore.build/DerivedSources/libnumhop/libnumhop.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D84CB3726C291BA0038B4BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DCB27DB26C2E62A00A2C2E9 /* libsundials_sunlinsoldense.a in Frameworks */,
+				5DCB27E126C3C3CE00A2C2E9 /* libnumhop.a in Frameworks */,
+				5DCB27D926C2E5EE00A2C2E9 /* libsundials_nvecserial.a in Frameworks */,
+				5DCB27D726C2E5CD00A2C2E9 /* libsundials_kinsol.a in Frameworks */,
+				5DCB27DE26C2F94D00A2C2E9 /* libindexingcsvparser.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D84CB3026C291BA0038B4BD = {
+			isa = PBXGroup;
+			children = (
+				5D84CB8D26C295320038B4BD /* src */,
+				5D84CB3A26C291BA0038B4BD /* Products */,
+				5DCB27D526C2E5CC00A2C2E9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5D84CB3A26C291BA0038B4BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D84CB3926C291BA0038B4BD /* libhopsancore.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D84CB8D26C295320038B4BD /* src */ = {
+			isa = PBXGroup;
+			children = (
+				5D84CBAE26C296490038B4BD /* CoreUtilities */,
+				5D84CB8F26C2962F0038B4BD /* ComponentUtilities */,
+				5D84CB8226C294E50038B4BD /* Component.cpp */,
+				5D84CB7B26C294E50038B4BD /* ComponentSystem.cpp */,
+				5D84CB8326C294E50038B4BD /* HopsanEssentials.cpp */,
+				5D84CB7C26C294E50038B4BD /* HString.cpp */,
+				5D84CB8026C294E50038B4BD /* Node.cpp */,
+				5D84CB8126C294E50038B4BD /* Nodes.cpp */,
+				5D84CB7D26C294E50038B4BD /* Parameters.cpp */,
+				5D84CB7E26C294E50038B4BD /* Port.cpp */,
+				5D84CB7F26C294E50038B4BD /* Quantities.cpp */,
+			);
+			name = src;
+			path = ../../../HopsanCore/src;
+			sourceTree = SOURCE_ROOT;
+		};
+		5D84CB8F26C2962F0038B4BD /* ComponentUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				5D84CB9026C2962F0038B4BD /* SecondOrderTransferFunction.cpp */,
+				5D84CB9126C2962F0038B4BD /* TempDirectoryHandle.cpp */,
+				5D84CB9226C2962F0038B4BD /* PLOParser.cpp */,
+				5D84CB9326C2962F0038B4BD /* LookupTable.cpp */,
+				5D84CB9426C2962F0038B4BD /* IntegratorLimited.cpp */,
+				5D84CB9526C2962F0038B4BD /* HopsanPowerUser.cpp */,
+				5D84CB9626C2962F0038B4BD /* ludcmp.cpp */,
+				5D84CB9726C2962F0038B4BD /* DoubleIntegratorWithDampingAndCoulumbFriction.cpp */,
+				5D84CB9826C2962F0038B4BD /* WhiteGaussianNoise.cpp */,
+				5D84CB9926C2962F0038B4BD /* EquationSystemSolver.cpp */,
+				5D84CB9A26C2962F0038B4BD /* matrix.cpp */,
+				5D84CB9B26C2962F0038B4BD /* AuxiliarySimulationFunctions.cpp */,
+				5D84CB9C26C2962F0038B4BD /* DoubleIntegratorWithDamping.cpp */,
+				5D84CB9D26C2962F0038B4BD /* CSVParser.cpp */,
+				5D84CB9E26C2962F0038B4BD /* FirstOrderTransferFunction.cpp */,
+			);
+			path = ComponentUtilities;
+			sourceTree = "<group>";
+		};
+		5D84CBAE26C296490038B4BD /* CoreUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				5D84CBAF26C296490038B4BD /* LoadExternal.cpp */,
+				5D84CBB026C296490038B4BD /* AliasHandler.cpp */,
+				5D84CBB126C296490038B4BD /* HopsanCoreMessageHandler.cpp */,
+				5D84CBB226C296490038B4BD /* SaveRestoreSimulationPoint.cpp */,
+				5D84CBB326C296490038B4BD /* StringUtilities.cpp */,
+				5D84CBB426C296490038B4BD /* NumHopHelper.cpp */,
+				5D84CBB526C296490038B4BD /* SimulationHandler.cpp */,
+				5D84CBB626C296490038B4BD /* MultiThreadingUtilities.cpp */,
+				5D84CBB726C296490038B4BD /* HmfLoader.cpp */,
+				5D84CBB826C296490038B4BD /* ConnectionAssistant.cpp */,
+			);
+			path = CoreUtilities;
+			sourceTree = "<group>";
+		};
+		5DCB27D526C2E5CC00A2C2E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DCB27E026C3C3BD00A2C2E9 /* libnumhop.a */,
+				5DCB27DD26C2F93700A2C2E9 /* libindexingcsvparser.a */,
+				5DCB27DA26C2E62A00A2C2E9 /* libsundials_sunlinsoldense.a */,
+				5DCB27D826C2E5EE00A2C2E9 /* libsundials_nvecserial.a */,
+				5DCB27D626C2E5CD00A2C2E9 /* libsundials_kinsol.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5D84CB3526C291BA0038B4BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5D84CB3826C291BA0038B4BD /* hopsancore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D84CB3D26C291BA0038B4BD /* Build configuration list for PBXNativeTarget "hopsancore" */;
+			buildPhases = (
+				5D43F27926C2A61300314345 /* CMake sundials */,
+				5DCB27DC26C2F4C900A2C2E9 /* CMake indexingcsvparser */,
+				5DCB27DF26C3C22600A2C2E9 /* CMake numhop */,
+				5D84CB3526C291BA0038B4BD /* Headers */,
+				5D84CB3626C291BA0038B4BD /* Sources */,
+				5D84CB3726C291BA0038B4BD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hopsancore;
+			productName = hopsancore;
+			productReference = 5D84CB3926C291BA0038B4BD /* libhopsancore.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D84CB3126C291BA0038B4BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					5D84CB3826C291BA0038B4BD = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 5D84CB3426C291BA0038B4BD /* Build configuration list for PBXProject "hopsancore" */;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5D84CB3026C291BA0038B4BD;
+			productRefGroup = 5D84CB3A26C291BA0038B4BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D84CB3826C291BA0038B4BD /* hopsancore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5D43F27926C2A61300314345 /* CMake sundials */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(PROJECT_DIR)/../../../HopsanCore/dependencies/sundials/CMakeLists.txt",
+			);
+			name = "CMake sundials";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/sundials/src/kinsol/libsundials_kinsol.a",
+				"$(DERIVED_FILE_DIR)/sundials/src/nvector/serial/libsundials_nvecserial.a",
+				"$(DERIVED_FILE_DIR)/sundials/src/sunlinsol/dense/libsundials_sunlinsoldense.a",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\ncmake -B ${DERIVED_FILE_DIR}/sundials ${PROJECT_DIR}/../../../HopsanCore/dependencies/sundials/\ncd ${DERIVED_FILE_DIR}/sundials\nmake\nmake test\n\n";
+		};
+		5DCB27DC26C2F4C900A2C2E9 /* CMake indexingcsvparser */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(PROJECT_DIR)/../../../HopsanCore/dependencies/indexingcsvparser/CMakeLists.txt",
+			);
+			name = "CMake indexingcsvparser";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/indexingcsvparser/indexingcsvparser.a",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\ncmake -B ${DERIVED_FILE_DIR}/indexingcsvparser ${PROJECT_DIR}/../../../HopsanCore/dependencies/indexingcsvparser/\ncd ${DERIVED_FILE_DIR}/indexingcsvparser\nmake\nmake test\n";
+		};
+		5DCB27DF26C3C22600A2C2E9 /* CMake numhop */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(PROJECT_DIR)/../../../HopsanCore/dependencies/libnumhop/CMakeLists.txt",
+			);
+			name = "CMake numhop";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/libnumhop/libnumhop.a",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\ncmake -B ${DERIVED_FILE_DIR}/libnumhop ${PROJECT_DIR}/../../../HopsanCore/dependencies/libnumhop/\ncd ${DERIVED_FILE_DIR}/libnumhop\nmake\nmake test\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D84CB3626C291BA0038B4BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D84CBAD26C2962F0038B4BD /* FirstOrderTransferFunction.cpp in Sources */,
+				5D84CBBF26C296490038B4BD /* SimulationHandler.cpp in Sources */,
+				5D84CBA426C2962F0038B4BD /* HopsanPowerUser.cpp in Sources */,
+				5D84CBBC26C296490038B4BD /* SaveRestoreSimulationPoint.cpp in Sources */,
+				5D84CBAB26C2962F0038B4BD /* DoubleIntegratorWithDamping.cpp in Sources */,
+				5D84CBA026C2962F0038B4BD /* TempDirectoryHandle.cpp in Sources */,
+				5D84CB8A26C294E50038B4BD /* Nodes.cpp in Sources */,
+				5D84CB8526C294E50038B4BD /* HString.cpp in Sources */,
+				5D84CB8826C294E50038B4BD /* Quantities.cpp in Sources */,
+				5D84CBA226C2962F0038B4BD /* LookupTable.cpp in Sources */,
+				5D84CBA626C2962F0038B4BD /* DoubleIntegratorWithDampingAndCoulumbFriction.cpp in Sources */,
+				5D84CB8B26C294E50038B4BD /* Component.cpp in Sources */,
+				5D84CB8726C294E50038B4BD /* Port.cpp in Sources */,
+				5D84CBA126C2962F0038B4BD /* PLOParser.cpp in Sources */,
+				5D84CBA326C2962F0038B4BD /* IntegratorLimited.cpp in Sources */,
+				5D84CBA826C2962F0038B4BD /* EquationSystemSolver.cpp in Sources */,
+				5D84CBBB26C296490038B4BD /* HopsanCoreMessageHandler.cpp in Sources */,
+				5D84CBBD26C296490038B4BD /* StringUtilities.cpp in Sources */,
+				5D84CB8C26C294E50038B4BD /* HopsanEssentials.cpp in Sources */,
+				5D84CBA926C2962F0038B4BD /* matrix.cpp in Sources */,
+				5D84CBC226C296490038B4BD /* ConnectionAssistant.cpp in Sources */,
+				5D84CBAC26C2962F0038B4BD /* CSVParser.cpp in Sources */,
+				5D84CBC126C296490038B4BD /* HmfLoader.cpp in Sources */,
+				5D84CB8926C294E50038B4BD /* Node.cpp in Sources */,
+				5D84CB8626C294E50038B4BD /* Parameters.cpp in Sources */,
+				5D84CBA726C2962F0038B4BD /* WhiteGaussianNoise.cpp in Sources */,
+				5D84CB9F26C2962F0038B4BD /* SecondOrderTransferFunction.cpp in Sources */,
+				5D84CB8426C294E50038B4BD /* ComponentSystem.cpp in Sources */,
+				5D84CBA526C2962F0038B4BD /* ludcmp.cpp in Sources */,
+				5D84CBBE26C296490038B4BD /* NumHopHelper.cpp in Sources */,
+				5D84CBC026C296490038B4BD /* MultiThreadingUtilities.cpp in Sources */,
+				5D84CBB926C296490038B4BD /* LoadExternal.cpp in Sources */,
+				5D84CBBA26C296490038B4BD /* AliasHandler.cpp in Sources */,
+				5D84CBAA26C2962F0038B4BD /* AuxiliarySimulationFunctions.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5D84CB3B26C291BA0038B4BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5D84CB3C26C291BA0038B4BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5D84CB3E26C291BA0038B4BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					$PROJECT_DIR/../../../HopsanCore/dependencies/sundials/include,
+					$PROJECT_DIR/../../../HopsanCore/include/,
+					$PROJECT_DIR/../../../HopsanCore/dependencies/indexingcsvparser/include/,
+					"$PROJECT_DIR/../../../HopsanCore/dependencies/sundials-extra/include/",
+					$PROJECT_DIR/../../../HopsanCore/dependencies/libnumhop/include/,
+					$PROJECT_DIR/../../../HopsanCore/dependencies/rapidxml/,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(DERIVED_FILE_DIR)/sundials/src/sunlinsol/dense/",
+					"$(DERIVED_FILE_DIR)/sundials/src/nvector/serial/",
+					"$(DERIVED_FILE_DIR)/sundials/src/kinsol/",
+					"$(DERIVED_FILE_DIR)/indexingcsvparser/",
+					"$(DERIVED_FILE_DIR)/libnumhop/",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5D84CB3F26C291BA0038B4BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					$PROJECT_DIR/../../../HopsanCore/dependencies/sundials/include,
+					$PROJECT_DIR/../../../HopsanCore/include/,
+					$PROJECT_DIR/../../../HopsanCore/dependencies/indexingcsvparser/include/,
+					"$PROJECT_DIR/../../../HopsanCore/dependencies/sundials-extra/include/",
+					$PROJECT_DIR/../../../HopsanCore/dependencies/libnumhop/include/,
+					$PROJECT_DIR/../../../HopsanCore/dependencies/rapidxml/,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(DERIVED_FILE_DIR)/sundials/src/sunlinsol/dense/",
+					"$(DERIVED_FILE_DIR)/sundials/src/nvector/serial/",
+					"$(DERIVED_FILE_DIR)/sundials/src/kinsol/",
+					"$(DERIVED_FILE_DIR)/indexingcsvparser/",
+					"$(DERIVED_FILE_DIR)/libnumhop/",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D84CB3426C291BA0038B4BD /* Build configuration list for PBXProject "hopsancore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D84CB3B26C291BA0038B4BD /* Debug */,
+				5D84CB3C26C291BA0038B4BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D84CB3D26C291BA0038B4BD /* Build configuration list for PBXNativeTarget "hopsancore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D84CB3E26C291BA0038B4BD /* Debug */,
+				5D84CB3F26C291BA0038B4BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5D84CB3126C291BA0038B4BD /* Project object */;
+}

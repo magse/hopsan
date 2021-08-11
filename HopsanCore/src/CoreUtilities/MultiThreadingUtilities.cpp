@@ -88,10 +88,10 @@ size_t determineActualNumberOfThreads(const size_t nDesiredThreads)
 //! @param startTime Start time of simulation
 //! @param timeStep Step time of simulation
 //! @param numSimSteps Number of simulation steps to run
-//! @param *pBarrier_S Pointer to barrier before signal components
-//! @param *pBarrier_C Pointer to barrier before C-type components
-//! @param *pBarrier_Q Pointer to barrier before Q-type components
-//! @param *pBarrier_N Pointer to barrier before node logging
+//! @param pBarrier_S Pointer to barrier before signal components
+//! @param pBarrier_C Pointer to barrier before C-type components
+//! @param pBarrier_Q Pointer to barrier before Q-type components
+//! @param pBarrier_N Pointer to barrier before node logging
 void simSlave(ComponentSystem *pSystem,
               std::vector<Component*> &sVector,
               std::vector<Component*> &cVector,
@@ -169,14 +169,14 @@ void simSlave(ComponentSystem *pSystem,
 //! @param cVector Vector with C-type components executed from this thread
 //! @param qVector Vector with Q-type components executed from this thread
 //! @param nVector Vector with nodes which is logged from this thread
-//! @param *pSimTimes Pointer to the simulation time variables in the component systems
+//! @param pSimTimes Pointer to the simulation time variables in the component systems
 //! @param startTime Start time of simulation
 //! @param timeStep Step time of simulation
 //! @param numSimSteps Number of steps to simulate
-//! @param *pBarrier_S Pointer to barrier before signal components
-//! @param *pBarrier_C Pointer to barrier before C-type components
-//! @param *pBarrier_Q Pointer to barrier before Q-type components
-//! @param *pBarrier_N Pointer to barrier before node logging
+//! @param pBarrier_S Pointer to barrier before signal components
+//! @param pBarrier_C Pointer to barrier before C-type components
+//! @param pBarrier_Q Pointer to barrier before Q-type components
+//! @param pBarrier_N Pointer to barrier before node logging
 void simMaster(ComponentSystem *pSystem, std::vector<Component *> &sVector, std::vector<Component *> &cVector,
                std::vector<Component *> &qVector, std::vector<Node *> &nVector, std::vector<double *> &pSimTimes, double startTime, double timeStep,
                size_t numSimSteps, BarrierLock *pBarrier_S, BarrierLock *pBarrier_C,
@@ -409,7 +409,7 @@ void simStealingMaster(ComponentSystem *pSystem,
         {
             for(size_t i=0; i<nThreads-1; ++i)
             {
-                int j = (threadID+1+i)%nThreads;
+                size_t j = (threadID+1+i)%nThreads;
                 pComp = pUnFinishedVectorsC->at(j)->tryAndTakeLast();
                 if(pComp)
                 {
@@ -447,7 +447,7 @@ void simStealingMaster(ComponentSystem *pSystem,
         {
             for(size_t i=0; i<nThreads-1; ++i)
             {
-                int j = (threadID+1+i)%nThreads;
+                size_t j = (threadID+1+i)%nThreads;
                 pComp = pUnFinishedVectorsQ->at(j)->tryAndTakeLast();
                 if(pComp)
                 {
@@ -534,7 +534,7 @@ void simStealingSlave(ComponentSystem *pSystem,
         {
             for(size_t i=0; i<nThreads-1; ++i)
             {
-                int j = (threadID+1+i)%nThreads;
+                size_t j = (threadID+1+i)%nThreads;
                 pComp = pUnFinishedVectorsC->at(j)->tryAndTakeLast();
                 if(pComp)
                 {
@@ -571,7 +571,7 @@ void simStealingSlave(ComponentSystem *pSystem,
         {
             for(size_t i=0; i<nThreads-1; ++i)
             {
-                int j = (threadID+1+i)%nThreads;
+                size_t j = (threadID+1+i)%nThreads;
                 pComp = pUnFinishedVectorsQ->at(j)->tryAndTakeLast();
                 if(pComp)
                 {

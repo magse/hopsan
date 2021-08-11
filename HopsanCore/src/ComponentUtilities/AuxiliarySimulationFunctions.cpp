@@ -46,7 +46,7 @@ using namespace hopsan;
 
 //! @brief Limits a value so it is between min and max
 //! @ingroup AuxiliarySimulationFunctions
-//! @param &rValue Reference pointer to the value
+//! @param rValue Reference pointer to the value
 //! @param min Lower limit of the value
 //! @param max Upper limit of the value
 void hopsan::limitValue(double &rValue, double min, double max)

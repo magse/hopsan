@@ -70,7 +70,7 @@ public:
     //! @param nThreads Number of threads to by synchronized.
     BarrierLock(size_t nThreads)
     {
-        mnThreads=nThreads;
+        mnThreads=static_cast<int>(nThreads);
         mCounter = 0;
         mLock = true;
     }
@@ -189,14 +189,14 @@ class ThreadSafeVector
 public:
     ThreadSafeVector(std::vector<Component*> data, size_t maxSize)
     {
-        mSize = maxSize;
+        mSize = static_cast<int>(maxSize);
         mVector.resize(maxSize);
         for(size_t i=0; i<data.size(); ++i)
         {
             mVector[i] = data[i];
         }
         firstIdx=0;
-        lastIdx=std::max(size_t(1), data.size())-1;
+        lastIdx=static_cast<int>(std::max(size_t(1), data.size())-1);
         mpMutex = new std::mutex();
     }
 

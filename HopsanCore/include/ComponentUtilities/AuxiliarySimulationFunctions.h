@@ -210,7 +210,7 @@ inline double dfIfPositive(const double x, const double /*y1*/, const double /*y
 //! @param xmin Minimum value of x
 //! @param xmax Maximum value of x
 //! @returns Limited x value
-inline double limit2(const double x, const double /*sx*/, const double xmin, const double xmax)
+inline double limit2(const double x, const double sx, const double xmin, const double xmax)
 {
     return hopsan::limit(x, xmin, xmax);
 }
@@ -332,7 +332,7 @@ inline double greaterThanOrEqual(const double x, const double y)
 
 
 //! @brief Prevents a value from becoming exactly equal to zero
-//! @param Value to check
+//! @param x to check
 //! @returns Limited value
 inline double nonZero(const double x)
 {

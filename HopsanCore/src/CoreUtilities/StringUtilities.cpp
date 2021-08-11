@@ -97,14 +97,14 @@ hopsan::HString hopsan::santizeName(const HString &rName)
     return name;
 }
 
-//! @deprecated Use HString::split(char delim) instead
-void hopsan::splitString(const HString &rString, const char delim, std::vector<HString> &rParts)
-{
-    rParts.clear();
-    std::string item;
-    std::stringstream ss(rString.c_str());
-    while(getline(ss, item, delim))
-    {
-        rParts.push_back(item.c_str());
-    }
-}
+////! @deprecated Use HString::split(char delim) instead
+//void hopsan::splitString(const HString &rString, const char delim, std::vector<HString> &rParts)
+//{
+//    rParts.clear();
+//    std::string item;
+//    std::stringstream ss(rString.c_str());
+//    while(getline(ss, item, delim))
+//    {
+//        rParts.push_back(item.c_str());
+//    }
+//}

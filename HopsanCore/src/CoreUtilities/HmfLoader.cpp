@@ -60,7 +60,7 @@ int getGenerationVersion(const HString &version)
     }
 
     bool dummy;
-    return tempStr.toLongInt(&dummy);
+    return static_cast<int>(tempStr.toLongInt(&dummy));
 }
 
 int getMajorVersion(const HString &version)
@@ -74,7 +74,7 @@ int getMajorVersion(const HString &version)
     }
 
     bool dummy;
-    return tempStr.toLongInt(&dummy);
+    return static_cast<int>(tempStr.toLongInt(&dummy));
 }
 
 int getMinorVersion(const HString &version)
@@ -92,7 +92,7 @@ int getMinorVersion(const HString &version)
     if(tempStr == "")
         return -1;
 
-    return tempStr.toLongInt(&dummy);
+    return static_cast<int>(tempStr.toLongInt(&dummy));
 }
 
 
@@ -129,7 +129,7 @@ int getRevisionNumber(const HString &version)
     if(tempStr == "")
         return -1;
 
-    return tempStr.toLongInt(&dummy);
+    return static_cast<int>(tempStr.toLongInt(&dummy));
 }
 
 
@@ -297,74 +297,77 @@ void updateOldModelFileComponent(rapidxml::xml_node<> */*pComponentNode*/, const
 
 }
 
-void updateRenamedComponentType(rapidxml::xml_node<> *pNode, const string &rOldType, const string &rNewType)
-{
-    if(readStringAttribute(pNode, "typename", "") == rOldType)
-    {
-        writeStringAttribute(pNode, "typename", rNewType);
-    }
-}
+//! @todo TODO: unused function
+//void updateRenamedComponentType(rapidxml::xml_node<> *pNode, const string &rOldType, const string &rNewType)
+//{
+//    if(readStringAttribute(pNode, "typename", "") == rOldType)
+//    {
+//        writeStringAttribute(pNode, "typename", rNewType);
+//    }
+//}
 
-void updateRenamedPort(rapidxml::xml_node<> *pNode, const string &rComponentType, const HString &rOldName, const HString &rNewName)
-{
-    if(readStringAttribute(pNode, "typename", "") == rComponentType)
-    {
-        // Rename startvalue parameters
-        rapidxml::xml_node<> *pParamNode = getGrandChild(pNode, "parameters", "parameter");
-        while (pParamNode)
-        {
-            HString paramName = readStringAttribute(pParamNode, "name").c_str();
-            if (paramName.containes(rOldName+"#"))
-            {
-                paramName.replace(rOldName+"#", rNewName+"#");
-                writeStringAttribute(pParamNode, "name", paramName.c_str());
-            }
-            pParamNode = pParamNode->next_sibling("parameter");
-        }
+//! @todo TODO: unused function
+//void updateRenamedPort(rapidxml::xml_node<> *pNode, const string &rComponentType, const HString &rOldName, const HString &rNewName)
+//{
+//    if(readStringAttribute(pNode, "typename", "") == rComponentType)
+//    {
+//        // Rename startvalue parameters
+//        rapidxml::xml_node<> *pParamNode = getGrandChild(pNode, "parameters", "parameter");
+//        while (pParamNode)
+//        {
+//            HString paramName = readStringAttribute(pParamNode, "name").c_str();
+//            if (paramName.containes(rOldName+"#"))
+//            {
+//                paramName.replace(rOldName+"#", rNewName+"#");
+//                writeStringAttribute(pParamNode, "name", paramName.c_str());
+//            }
+//            pParamNode = pParamNode->next_sibling("parameter");
+//        }
+//
+//        // Now try to find all connections, and replace portname
+//        string compName = readStringAttribute(pNode, "name");
+//        rapidxml::xml_node<> *pConnNode = getGrandChild(pNode->parent()->parent(),"connections","connect");
+//        while (pConnNode)
+//        {
+//            string startComp = readStringAttribute(pConnNode, "startcomponent");
+//            string endComp = readStringAttribute(pConnNode, "endcomponent");
+//
+//            if (startComp == compName)
+//            {
+//                if (readStringAttribute(pConnNode, "startport").c_str() == rOldName)
+//                {
+//                    writeStringAttribute(pConnNode, "startport", rNewName.c_str());
+//                }
+//            }
+//            if (endComp == compName)
+//            {
+//                if (readStringAttribute(pConnNode, "endport").c_str() == rOldName)
+//                {
+//                    writeStringAttribute(pConnNode, "endport", rNewName.c_str());
+//                }
+//            }
+//
+//            pConnNode = pConnNode->next_sibling("connect");
+//        }
+//    }
+//}
 
-        // Now try to find all connections, and replace portname
-        string compName = readStringAttribute(pNode, "name");
-        rapidxml::xml_node<> *pConnNode = getGrandChild(pNode->parent()->parent(),"connections","connect");
-        while (pConnNode)
-        {
-            string startComp = readStringAttribute(pConnNode, "startcomponent");
-            string endComp = readStringAttribute(pConnNode, "endcomponent");
-
-            if (startComp == compName)
-            {
-                if (readStringAttribute(pConnNode, "startport").c_str() == rOldName)
-                {
-                    writeStringAttribute(pConnNode, "startport", rNewName.c_str());
-                }
-            }
-            if (endComp == compName)
-            {
-                if (readStringAttribute(pConnNode, "endport").c_str() == rOldName)
-                {
-                    writeStringAttribute(pConnNode, "endport", rNewName.c_str());
-                }
-            }
-
-            pConnNode = pConnNode->next_sibling("connect");
-        }
-    }
-}
-
-void updateRenamedParameter(rapidxml::xml_node<> *pNode, const string &rComponentType, const string &rOldName, const string &rNewName)
-{
-    if(readStringAttribute(pNode,"typename") == rComponentType)
-    {
-        rapidxml::xml_node<> *pParamNode = getGrandChild(pNode, "parameters", "parameter");
-        while (pParamNode)
-        {
-            if (readStringAttribute(pParamNode, "name") == rOldName)
-            {
-                writeStringAttribute(pParamNode, "name", rNewName);
-            }
-            pParamNode = pParamNode->next_sibling("parameter");
-        }
-    }
-}
+//! @todo TODO: unused function
+//void updateRenamedParameter(rapidxml::xml_node<> *pNode, const string &rComponentType, const string &rOldName, const string &rNewName)
+//{
+//    if(readStringAttribute(pNode,"typename") == rComponentType)
+//    {
+//        rapidxml::xml_node<> *pParamNode = getGrandChild(pNode, "parameters", "parameter");
+//        while (pParamNode)
+//        {
+//            if (readStringAttribute(pParamNode, "name") == rOldName)
+//            {
+//                writeStringAttribute(pParamNode, "name", rNewName);
+//            }
+//            pParamNode = pParamNode->next_sibling("parameter");
+//        }
+//    }
+//}
 
 
 size_t loadValuesFromHopsanParameterFile(rapidxml::xml_node<> *pComponentNode, Component *pComponent)
@@ -738,11 +741,11 @@ void loadSystemContents(rapidxml::xml_node<> *pSysNode, ComponentSystem* pSystem
     // Load number of log samples
     rapidxml::xml_node<> *pLogSettingsNode = pSysNode->first_node("simulationlogsettings");
     pSystem->setLogStartTime(readDoubleAttribute(pLogSettingsNode, "starttime", pSystem->getLogStartTime()));
-    pSystem->setNumLogSamples(readIntAttribute(pLogSettingsNode, "numsamples", pSystem->getNumLogSamples()));
+    pSystem->setNumLogSamples(readIntAttribute(pLogSettingsNode, "numsamples", pSystem->getNumLogSamples())); //! @todo TODO: type casting need to be checked here. /magse
     //! @deprecated 20131002 keep this old way of loading for a while for backwards compatibility
     if(hasAttribute(pSysNode,  "logsamples"))
     {
-        pSystem->setNumLogSamples(readIntAttribute(pSysNode, "logsamples", pSystem->getNumLogSamples()));
+        pSystem->setNumLogSamples(readIntAttribute(pSysNode, "logsamples", pSystem->getNumLogSamples())); //! @todo TODO: type casting need to be checked here. /magse
     }
 
     //! @todo we really need defines for allof these "strings"
@@ -925,7 +928,7 @@ int hopsan::getEpochVersion(const HString& version)
   HVector<HString> parts = version.split('.');
   if (!parts.empty())
   {
-    epoch = parts[0].toLongInt(&ok);
+    epoch = static_cast<int>(parts[0].toLongInt(&ok));
   }
   return ok ? epoch : -1;
 }
@@ -937,7 +940,7 @@ int hopsan::getMajorVersion(const HString& version)
   HVector<HString> parts = version.split('.');
   if (parts.size() > 1)
   {
-    major = parts[1].toLongInt(&ok);
+    major = static_cast<int>(parts[1].toLongInt(&ok));
   }
   return ok ? major : -1;
 }
@@ -949,7 +952,7 @@ int hopsan::getMinorVersion(const HString& version)
   HVector<HString> parts = version.split('.');
   if (parts.size() > 2)
   {
-    minor = parts[2].toLongInt(&ok);
+    minor = static_cast<int>(parts[2].toLongInt(&ok));
   }
   return ok ? minor : -1;
 }

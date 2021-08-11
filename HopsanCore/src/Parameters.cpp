@@ -61,7 +61,7 @@ using namespace std;
 //! @param [in] rUnit The physical unit of the parameter e.g. kg
 //! @param [in] rType The type of the parameter e.g. double
 //! @param [in] pDataPtr Only used by Components, system parameters don't use this, default: 0
-//! @param [in] pParentParameters A pointer to the Parameters object that contains the Parameter
+//! @param [in] pParameterEvalHandler A pointer to the Parameters object that contains the Parameter
 ParameterEvaluator::ParameterEvaluator(const HString &rName, const HString &rValue, const HString &rDescription, const HString &rQuantity, const HString &rUnit,
                                        const HString &rType, void* pDataPtr, ParameterEvaluatorHandler* pParameterEvalHandler)
 {
@@ -520,7 +520,7 @@ void ParameterEvaluator::splitSignPrefix(const HString &rString, HString &rPrefi
 
 
 //! @brief Constructor
-//! @param [in] pParentComponent A pointer to the Component that contains the Parameters
+//! @param [in] pComponent A pointer to the Component that contains the Parameters
 ParameterEvaluatorHandler::ParameterEvaluatorHandler(Component* pComponent)
 {
     mComponent = pComponent;

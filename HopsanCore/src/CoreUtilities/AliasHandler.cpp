@@ -33,7 +33,9 @@
 #include <vector>
 #include <map>
 
+#if defined(_WIN32) || defined(_WIN64)
 #include "win32dll.h"
+#endif
 #include "HopsanTypes.h"
 
 #include "CoreUtilities/AliasHandler.h"

@@ -73,8 +73,8 @@ namespace hopsan {
         Vec &apply(V_FCT_PTR fct);
         double max(); //!< returns maximum Vec element
         double min(); //!< returns minimum Vec element
-        double norm(); //< returns 2-norm (magnitude) of Vec
-        void normalize(); //< convert Vec to unit magnitude
+        double norm(); //!< returns 2-norm (magnitude) of Vec
+        void normalize(); //!< convert Vec to unit magnitude
         //! returns  dot product of a and b
         static double dot(const Vec &a, const Vec &b);
 
