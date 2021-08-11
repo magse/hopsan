@@ -3,3 +3,5 @@ build/
 hopsan.xcworkspace/xcuserdata/
 hopsancore/hopsancore.xcodeproj/project.xcworkspace/xcuserdata/
 hopsancore/hopsancore.xcodeproj/xcuserdata/
+dependencies/usr/
+dependencies/sundials/
